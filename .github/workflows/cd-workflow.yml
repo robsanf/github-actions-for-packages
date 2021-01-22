@@ -9,7 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v1
       - name: npm install and build webpack
@@ -65,4 +64,4 @@ Build-and-Push-Docker-Image:
         password: ${{secrets.GITHUB_TOKEN}}
         registry: docker.pkg.github.com
         repository: robsanf/github-actions-for-packages/tic-tac-toe
-        tag_with_sha: true:  
+        tag_with_sha: true 
